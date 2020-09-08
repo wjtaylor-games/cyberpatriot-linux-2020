@@ -26,3 +26,7 @@ printf "auth required pam_tally2.so deny=5 onerr=fail unlock_time=1800\n" >> /et
 # setup audits
 apt-get install auditd
 auditctl -e 1
+
+# setup firewall
+ufw enable
+apt install gufw  # a gui option.
