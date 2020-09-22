@@ -8,8 +8,10 @@
 # Disable the guest account
 printf "allow-guest=false\n" >> /etc/lightdm/lightdm.conf
 
+# Cracklib install
+apt install libpam-cracklib
 # Password history of 5 and length of 8:
-sed -i '/pam_unix\.so/s/$/\tremember=5\tminlength=8/' /etc/pam.d/common-password
+sed -i '/pam_unix\.so/s/$/\tremember=5\tminlen=8\tsha512' /etc/pam.d/common-password
 # Passwords must be complicated.
 sed -i '/pam_cracklib\.so/s/$/\tucredit=-1\tlcredit=-1\tdcredit=-1\tocredit=-1/' /etc/pam.d/common-password
 
