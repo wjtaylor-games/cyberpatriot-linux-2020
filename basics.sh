@@ -20,6 +20,9 @@ sed -i '/^PASS_MAX_DAYS\s*[0-9]+/s/[0-9]+/90/' /etc/login.defs  # Maximum
 sed -i '/^PASS_MIN_DAYS\s*[0-9]+/s/[0-9]+/10/' /etc/login.defs  # Minimum
 sed -i '/^PASS_WARN_AGE\s*[0-9]+/s/[0-9]+/7/' /etc/login.defs  # Days before expiration to warn user.
 
+# I'm not sure what this does.
+useradd -D -f 30
+
 # account lockout policies.
 # this sets the number of failed login attempts to 5
 # and the lockout duration to 1800 seconds (30 minutes).
