@@ -35,3 +35,10 @@ auditctl -e 1
 # setup firewall
 ufw enable
 apt install gufw  # a gui option.
+
+# install ansible in case we want to run a playbook.
+apt update
+apt install software-properties-common
+apt-add-repository --yes --update ppa:ansible/ansible
+apt install ansible
+
