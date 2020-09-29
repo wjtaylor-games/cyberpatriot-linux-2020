@@ -1,0 +1,21 @@
+#!/bin/bash
+systemctl disable autofs
+systemctl disable xinetd
+systemctl disable avahi-daemon
+systemctl disable cups
+systemctl disable isc-dhcp-server
+systemctl disable isc-dhcp-server6
+systemctl disable slapd
+systemctl disable nfs-server
+systemctl disable rpcbind
+systemctl disable bind9
+systemctl disable vsftpd
+systemctl disable apache2
+systemctl disable dovecot
+systemctl disable smbd
+systemctl disable squid
+systemctl disable snmpd
+systemctl disable rsync
+systemctl disable nis
+systemctl enable rsyslog
+systemctl enable cron
