@@ -9,7 +9,7 @@
 printf "allow-guest=false\n" >> /etc/lightdm/lightdm.conf
 
 # Cracklib install
-apt install libpam-cracklib
+apt-get install libpam-cracklib
 # Password history of 5 and length of 8:
 sed -i '/pam_unix\.so/s/$/\tremember=5\tminlen=8\tsha512' /etc/pam.d/common-password
 # Passwords must be complicated.
@@ -34,13 +34,13 @@ auditctl -e 1
 
 # setup firewall
 ufw enable
-apt install gufw  # a gui option.
+apt-get install gufw  # a gui option.
 
 # install ansible in case we want to run a playbook.
-apt update
-apt install software-properties-common
+apt-get update
+apt-get install software-properties-common
 apt-add-repository --yes --update ppa:ansible/ansible
-apt install ansible
+apt-get install ansible
 
 # Set GID 0 as default group for root account
 usermod -g 0 root

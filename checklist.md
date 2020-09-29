@@ -5,7 +5,7 @@ added to files. Purple is for existing text in files.
 
 \* \* To run scripts:
 
-sudo apt install git
+sudo apt-get install git
 
 git clone
 [[https://github.com/wjtaylor-games/cyberpatriot-linux-2020.git]{.ul}](https://github.com/wjtaylor-games/cyberpatriot-linux-2020.git)
