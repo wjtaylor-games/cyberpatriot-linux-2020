@@ -42,3 +42,5 @@ apt install software-properties-common
 apt-add-repository --yes --update ppa:ansible/ansible
 apt install ansible
 
+# Set GID 0 as default group for root account
+usermod -g 0 root

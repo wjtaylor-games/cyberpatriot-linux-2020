@@ -19,3 +19,13 @@ chmod u-x,go-wx /etc/group-
 chown root:root /etc/gshadow-
 chown root:shadow /etc/gshadow-
 chmod o-rwx,g-rw /etc/gshadow-
+Configure permissions on /etc/motd
+
+chown root:root /etc/motd
+chmod 644 /etc/motd
+permissions on /etc/issue
+chown root:root /etc/issue
+chmod 644 /etc/issue
+permissions on /etc/issue.net
+chown root:root /etc/issue.net
+chmod 644 /etc/issue.net
