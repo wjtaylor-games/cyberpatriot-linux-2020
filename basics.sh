@@ -44,3 +44,4 @@ apt-get install ansible
 
 # Set GID 0 as default group for root account
 usermod -g 0 root
+
