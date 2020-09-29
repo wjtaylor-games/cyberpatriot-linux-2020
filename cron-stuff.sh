@@ -1,3 +1,4 @@
+#!/bin/bash
 systemctl enable cron
 chown root:root /etc/crontab
 chmod og-rwx /etc/crontab
