@@ -18,4 +18,3 @@ systemctl disable snmpd
 systemctl disable rsync
 systemctl disable nis
 systemctl enable rsyslog
-systemctl enable cron
